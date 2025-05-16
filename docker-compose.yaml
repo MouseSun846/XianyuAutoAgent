@@ -2,8 +2,8 @@ version: '3'
 services:
   xianyu-agent:
     container_name: xianyu-agent
-    image: xianyu-agent:latest
+    image: docker.1ms.run/lmshg/xianyuautoagent:20250516T130259
     restart: always
     volumes:
       - ./.env:/app/.env
-
+      - ./prompts:/app/prompts

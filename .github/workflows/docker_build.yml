@@ -31,7 +31,7 @@ jobs:
 
       - name: Prepare release body
         run: |
-          RELEASE_DATETIME=$(date --rfc-3339=seconds)
+          RELEASE_DATETIME=$(date -u +"%Y%m%dT%H%M%S")
           echo "RELEASE_TAG=$RELEASE_DATETIME" >> $GITHUB_ENV
           
 

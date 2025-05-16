@@ -7,7 +7,7 @@ import websockets
 from loguru import logger
 from dotenv import load_dotenv
 from XianyuApis import XianyuApis
-
+import re
 
 from utils.xianyu_utils import generate_mid, generate_uuid, trans_cookies, generate_device_id, decrypt
 from XianyuAgent import XianyuReplyBot
